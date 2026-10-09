@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+   <meta charset="UTF8"
+   <meta name ="viewport"
+   content="width=device-width,initial-scale=1.0">
+   <title>My First Web page</title>
+   <link rel="stylesheet"href="css/styles.css">
+   <script src="js/script.js" defer></script>
+   </head>
+   <body>
+    <button id="themeToggle" type="button"> switch to Dark Theme</button>
+   <header>
+    <h1>Welcome to my personal Website</h1>
+    <p>Lungowe Walubita - 202502091</p>
+   </header>
+   <nav>
+    <a href="#about">About Me</a>
+    <a href="#hobbies">Hobbies</a>
+    <a href="#learning">Learning Plan</a>
+    <a href="#Photos">Photos</a>
+    <a href="#media">My Media</a>
+    <a href="#contact">Contact</a>
+    <a href="https://developer.mozzila.org/en-US/docs/Learn" target="_blank">Learn Web Development</a>
+    </nav>
+    <main
+    <section id="about">
+     <h2>About Me</h2>
+     <p>Hello,My name is Lungowe Walubita and i am a student learning web technologies. I am interested in understanding how websites are created using HTML and CSS. I enjoy learning new coputer skills and improving my programming knowledge.Through this course, Ihope to become more confident in my designing and developing websites.
+        </p>
+    </section>
+    <section id="hobbies"
+    class="content-selection">
+    <h2>My Hobbies</h2>
+    <ul>
+        <li>reading </li>
+        <li>listening to music</li>
+        <li>coding</li>
+        </ul>
+        </section>
+        <section id="Learning"
+        class="content-section ">
+        <h2>My Learning Plan</h2>
+        <ul>
+            <li>Learn HTML basics</li>
+            <li>Learn CSS styling</li>
+            <li>Practice building small websites and testing them in different browsers</li>
+            
+        </ul>
+    </section>
+    <table>
+        <caption>My weekly Web  Learning Plan</caption>
+        <tr>
+            <th>Day</th>
+        <th>Topic</th>
+        <th>practice Task</th>
+        </tr>
+        <td>Monnday</td>
+        <td>HTML</td>
+        <td>Practice creating webpage structures .</td>
+    </tr>
+    <tb>Wednesday</tb>
+    <tb>CSS</tb>
+    Practice styling a webpage.</td>
+</tr>
+<tr>
+    <td>Friday</td>
+    <td>Web Designing</td>
+    <td>Build and testa small wepage</td>
+</tr>
+        </table>
+    </section>
+    <section id ="photos"
+    class="content-section">
+    <h2>My Photos</h2>
+    <figure>
+        <img src="images/photo1.jpg"
+        alt="Me working on coding">
+        <figcaption>Working on my coding and programming skills.</figcaption>
+    </figure>
+<figure>
+    <img src="images/photo2.jpg" alt="Me listening to music">
+    <figcaption>Listening to music , one of my favorite hobbies.</figcaption>
+</figure>
+<figure>
+    <img src="images/photo3.jpg" alt="A Photo of me ">
+    <figcaption>A personal photo introducing me.</figcaption>
+</figure>
+</section>
+<section id ="media"
+class="content-section">
+    <h2>My Media</h2>
+    <h3>My introduction video</h3>
+    <video width="500" controls>
+        <source src="videos/Myvideo.mp4" type="video/mp4">
+        Your browser does not support the video element.
+    </video>
+    <p>
+        in this video , i introduce myself ,my programme and the webskill i hope to learn <div class="video-description"></div>
+</p>
+<h3>My Audio Recording</h3>
+<audio controls>
+    <source src="videos/MyAudio.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+</audio>
+<p>
+    in thhis audio recording,i talk about one of my hobbies and interest in technology.
+    </p>
+    <section id="projects">
+    <h2>My Projects</h2>
+    <p>Explore some of my learning projects.</p>
+
+    <button type="button" class="filter-btn" data-filter="all">
+        All
+    </button>
+    <button type="button" class="filter-btn" data-filter="web">
+        Web Development
+    </button>
+    <button type="button" class="filter-btn" data-filter="java">
+        Java
+    </button>
+
+    <div class="project-card" data-category="web">
+        <h3>Personal Website</h3>
+        <p>A website created using HTML and CSS.</p>
+    </div>
+
+    <div class="project-card" data-category="java">
+        <h3>Customer Manager App</h3>
+        <p>A beginner Java project for managing customer details.</p>
+    </div>
+
+    <div class="project-card" data-category="java">
+        <h3>Lodge Billing System</h3>
+        <p>A Java project for calculating lodge bills.</p>
+    </div>
+</section>
+    </section>
+    <section id ="contact"
+    class="content-section">
+    <h2>contact Me</h2>
+    <form id="contactForm">
+        <!--Keep your name, email, and message fields here-->
+
+    <p>
+        This form is for demonstration only and does not send your information anywhwere.
+        </p>
+        <form action="#">
+            <label for ="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <br><br>
+            <label for ="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <br><br>
+            <label for ="topic">Topic:</label>
+            <input type ="text" id="topic" name ="topic" required>
+            <br><br>
+            <label for ="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+            <br><br>
+            <button type="submit">Preview Message</button>
+            <p id="formFeedback"aria-live="polite"></p>
+            <div id="formPreview"aria-live="polite"></div>
+        </form>
+    </section>
+</main>
+<footer>
+    <p>&copy; 2026 Lungowe Walubita . All rights reserved.</p>
+    </footer>
+    </body>

@@ -1,0 +1,341 @@
+/* General page styling */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f7f9;
+    color: #333;
+}
+
+/* Header */
+header {
+    background-color: #243b53;
+    color: white;
+    text-align: center;
+    padding: 30px 15px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 32px;
+}
+
+header p {
+    font-size: 18px;
+}
+
+/* Navigation */
+nav {
+    background-color: #102a43;
+    text-align: center;
+    padding: 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+    padding: 8px;
+    display: inline-block;
+}
+
+nav a:hover,
+nav a:focus {
+    background-color: #486581;
+    border-radius: 5px;
+}
+
+/* Main content */
+main {
+    width: 90%;
+    max-width: 1000px;
+    margin: 20px auto;
+}
+
+/* Repeated section styling */
+.content-section {
+    background-color: white;
+    padding: 20px;
+    margin: 20px 0;
+    border: 1px solid #bcccdc;
+    border-radius: 8px;
+}
+
+/* Unique section */
+#hobbies {
+    background-color: #eef4f8;
+}
+
+/* Headings */
+h2 {
+    color: #243b53;
+    font-size: 25px;
+}
+
+h3 {
+    color: #486581;
+}
+
+/* Lists */
+ul,
+ol {
+    padding-left: 25px;
+}
+
+/* Images */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+figure {
+    margin: 15px;
+    text-align: center;
+    display: inline-block;
+    vertical-align: top;
+    width: 28%;
+}
+
+figcaption {
+    margin-top: 8px;
+    font-style: italic;
+}
+
+/* Video */
+video {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin-bottom: 15px;
+}
+
+/* Audio */
+audio {
+    max-width: 100%;
+}
+
+/* Table */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+caption {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+th,
+td {
+    border: 1px solid #829ab1;
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #d9e2ec;
+}
+
+/* Form */
+form {
+    margin-top: 15px;
+}
+
+label {
+    font-weight: bold;
+    display: inline-block;
+    margin-bottom: 5px;
+}
+
+input,
+textarea {
+    width: 100%;
+    max-width: 500px;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #829ab1;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+textarea {
+    height: 120px;
+}
+
+/* Submit button */
+button {
+    background-color: #243b53;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover,
+button:focus {
+    background-color: #486581;
+}
+
+/* Footer */
+footer {
+    background-color: #243b53;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 30px;
+}
+
+/* Mobile screen */
+@media (max-width: 600px) {
+
+    nav a {
+        display: block;
+        margin: 5px 0;
+    }
+
+    figure {
+        display: block;
+        width: 90%;
+        margin: 20px auto;
+    }
+
+    main {
+        width: 94%;
+    }
+
+    header h1 {
+        font-size: 25px;
+    }
+}
+/* Theme switch button */
+#themeToggle {
+    padding: 10px 16px;
+    margin: 10px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+/* Dark theme */
+body.dark-theme {
+    background-color: #1e1e1e;
+    color: #f5f5f5;
+}
+
+/* Keep text readable in dark mode */
+body.dark-theme section,
+body.dark-theme .project-card,
+body.dark-theme table,
+body.dark-theme th,
+body.dark-theme td {
+    background-color: #2d2d2d;
+    color: #f5f5f5;
+}
+
+body.dark-theme li,
+body.dark-theme p,
+body.dark-theme h1,
+body.dark-theme h2,
+body.dark-theme h3 {
+    color: #f5f5f5;
+}
+
+/* Links in dark mode */
+body.dark-theme a {
+    color: #87cefa;
+}
+/* General page layout */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+/* Sections and project cards */
+section {
+    margin: 20px 0;
+    padding: 20px;
+    border: 1px solid #cccccc;
+    border-radius: 8px;
+}
+
+.project-card {
+    margin: 15px 0;
+    padding: 15px;
+    border: 1px solid #cccccc;
+    border-radius: 8px;
+}
+
+/* Images and videos fit their containers */
+img,
+video {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Buttons and form controls */
+button,
+input,
+textarea {
+    max-width: 100%;
+    font: inherit;
+}
+
+button {
+    padding: 10px 14px;
+    margin: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    opacity: 0.85;
+}
+
+button:focus-visible,
+input:focus-visible,
+textarea:focus-visible,
+a:focus-visible {
+    outline: 3px solid #2474d2;
+    outline-offset: 3px;
+}
+
+/* Small-screen layout */
+@media (max-width: 600px) {
+    body {
+        padding: 10px;
+    }
+
+    section {
+        padding: 12px;
+    }
+
+    input,
+    textarea {
+        width: 100%;
+        max-width: 500px;
+        padding:10px;
+        margin: 5px 0;
+        border: 1px solid #999;
+        border-radius: 5px;
+    }
+
+    table {
+        display: block;
+        max-width: 100%;
+        overflow-x: auto;
+    }
+}
+body.dark-theme #hobbies,
+body.dark-theme #hobbies * {
+    background-color: #2d2d2d;
+    color: #f5f5f5;
+}
